@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/selected_user_image_to_create_group"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/vadim"
+        android:layout_margin="5dp"
+        />
+
+    <TextView
+        android:id="@+id/selected_user_name_to_create_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_user_image_to_create_group"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Username"
+        android:textColor="@android:color/black"
+        />
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selected_user_name_to_create_group"
+        android:background="@drawable/edittext_background_7"
+        android:text="  Admin  "
+        android:textColor="#26ff00"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>
+

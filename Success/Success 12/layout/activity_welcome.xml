@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deffe.macros.macrogrids.WelcomeActivity"
+    android:background="#fff"
+    >
+
+    <TextView
+        android:id="@+id/tap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accept_and_continue_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="Tap 'Accept and Continue' to accept the "
+        android:textColor="#000" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/accept_and_continue_view"
+        android:layout_centerHorizontal="true"
+        android:text="Terms and Conditions and Privacy Policy of MacroGrids"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="13dp"
+        android:layout_marginBottom="20dp"
+        android:background="#fff"
+        />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/accept_and_continue_view"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="20dp"
+        android:background="#000">
+
+        <Button
+            android:id="@+id/accept_and_continue_button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/rounded_accept_and_continue_background"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+            android:text="Accept and Continue"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            android:paddingRight="20dp"
+            />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

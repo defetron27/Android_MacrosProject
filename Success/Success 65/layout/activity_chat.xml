@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    xmlns:emojicon="http://schemas.android.com/apk/res-auto"
+    >
+
+    <include
+        android:id="@+id/chat_bar_layout"
+        layout="@layout/chat_app_bar_layout" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_list_of_users"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/chat_bar_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/input_area"
+        android:gravity="top"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/input_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="#fff"
+        >
+
+        <ImageButton
+            android:id="@+id/add_files"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/add"
+            android:layout_marginBottom="9dp"
+            />
+
+        <ImageButton
+            android:id="@+id/select_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@android:color/transparent"
+            android:contentDescription="@string/todo"
+            android:src="@drawable/chat_camera"
+            android:layout_marginBottom="9dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/test"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chat_text_background"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:orientation="horizontal"
+            >
+
+            <com.deffe.macros.grindersouls.Helper.EmojiconEditText
+                android:id="@+id/input_message"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:textColor="#000"
+                android:background="#00000000"
+                android:hint="Type something"
+                android:paddingLeft="16dp"
+                android:paddingStart="16dp"
+                android:paddingRight="15dp"
+                android:paddingEnd="15dp"
+                android:gravity="start"
+                android:layout_gravity="center"
+                android:paddingBottom="4dp"
+                />
+
+            <ImageButton
+                android:id="@+id/chat_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chat_emoji"
+                android:contentDescription="@string/todo"
+                android:background="@android:color/transparent"
+                android:layout_marginRight="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="3dp"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/send_message_btn"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:background="#00ffffff"
+            android:contentDescription="@string/todo"
+            app:srcCompat="@drawable/chat_send"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginBottom="4dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

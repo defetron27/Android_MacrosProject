@@ -1,0 +1,58 @@
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/selected_user_image_to_create_group"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/vadim"
+                android:layout_margin="5dp"
+                />
+
+            <TextView
+                android:id="@+id/selected_user_name_to_create_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Username"
+                android:textColor="@android:color/black"
+                android:layout_marginBottom="5dp"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_background_7"
+        android:text="  Admin  "
+        android:textColor="#26ff00"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/selected"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        />
+</RelativeLayout>

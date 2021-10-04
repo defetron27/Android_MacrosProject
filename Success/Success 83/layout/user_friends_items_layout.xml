@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/user_image_online_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_friend_image"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_online_status"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/online"
+            android:layout_alignBottom="@id/user_friend_image"
+            android:layout_alignEnd="@id/user_friend_image"
+            android:layout_alignRight="@id/user_friend_image"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/user_friend_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingStart="15dp"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/user_friend_since_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_friend_name"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/user_friend_unfriend_button"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:background="@drawable/edittext_background_3"
+            android:text="UnFriend"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="25sp"
+            android:layout_marginEnd="25sp"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

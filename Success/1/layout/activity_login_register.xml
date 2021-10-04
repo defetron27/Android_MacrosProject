@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deffe.macros.macrogrids.LoginRegisterActivity"
+    android:background="@drawable/background_grids"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text="Welcome"
+        android:textColor="#000"
+        android:textSize="30dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="to"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:id="@+id/macro-s"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/to"
+        android:layout_centerHorizontal="true"
+        android:text="Macro-s"
+        android:textColor="#000"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/register_activity_button"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="55dp"
+        android:drawableRight="@drawable/ic_register_user_icon"
+        android:paddingLeft="15dp"
+        android:paddingRight="30dp"
+        android:text="New  User"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_register_background"
+        android:textColor="#000"
+        android:textSize="15dp"
+        />
+
+    <Button
+        android:id="@+id/login_activity_button"
+        android:layout_width="220dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="151dp"
+        android:background="@drawable/round_login_background"
+        android:drawableLeft="@drawable/ic_login_user_icon"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Already an User"
+        android:textAllCaps="false"
+        android:textSize="15dp"
+        android:textColor="#000"
+        />
+
+</RelativeLayout>

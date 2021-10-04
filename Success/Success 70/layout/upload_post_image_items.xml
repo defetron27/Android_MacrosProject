@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="7dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_post_user_image"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/vadim"
+            android:layout_margin="6dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/image_post_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:text="Username"
+                android:textSize="17sp"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/image_post_user_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uploaded time"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/image_post_remove_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_details"
+            android:contentDescription="@string/todo"
+            android:background="@android:color/transparent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/image_line1"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/image_post_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/todo"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="7dp"
+        android:background="#000"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/image_line2"
+        android:background="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/image_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="the only one and legent steve jobs"
+        android:textColor="#000"
+        android:textSize="18sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="start"
+        android:gravity="start"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone"
+        />
+
+</LinearLayout>

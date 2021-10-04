@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deffe.macros.soulsspot.CreateNewGroupActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/create_new_group_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        app:title="Create New Group"
+        app:subtitle="       Enter your group name"
+        app:subtitleTextAppearance="@style/customContacts"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/create_group_image_name_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/create_new_group_tool_bar"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/create_new_group_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/vadim"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+        <EditText
+            android:id="@+id/create_new_group_name_edit_text"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:hint="Enter your group name..."
+            android:textColor="@android:color/black"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            />
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/create_new_group_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumbs_up"
+            android:layout_marginStart="300dp"
+            android:layout_marginLeft="300dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/selected_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/create_group_image_name_linear_layout"
+        android:text="Selected members:"
+        android:textColor="@android:color/black"
+        android:paddingLeft="20dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:background="#e7e7e7"
+        android:paddingStart="20dp"
+        tools:ignore="RtlSymmetry"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/selected_members_recycler_view"
+        android:layout_width="335dp"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/selected_members"
+        android:layout_margin="10dp"
+        />
+
+</RelativeLayout>

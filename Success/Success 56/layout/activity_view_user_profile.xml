@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ViewUserProfileActivity"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <ImageView
+            android:id="@+id/user_view_profile_image_background"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:contentDescription="@string/todo"
+            android:background="@android:color/black"
+            />
+
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/user_view_profile_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:title="UserName Profile"
+            app:titleTextColor="@android:color/black"
+            android:gravity="center"
+            tools:ignore="RtlSymmetry" />
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/profile_details"
+            android:layout_below="@+id/user_view_profile_toolbar"
+            android:gravity="center"
+            android:layout_marginTop="55dp"
+            >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_view_profile_image"
+                android:layout_width="160dp"
+                android:layout_height="160dp"
+                android:src="@drawable/vadim"
+                android:background="@drawable/circle"
+                android:padding="18dp"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/user_view_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:textStyle="italic"
+                android:paddingRight="10dp"
+                android:paddingEnd="10dp"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/user_view_profile_add_friend_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_toRightOf="@+id/profile_details"
+            android:background="@drawable/edittext_background_3"
+            android:gravity="center"
+            android:text="Add Friend"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="178dp"
+            />
+
+        <Button
+            android:id="@+id/user_view_profile_request_sent_button"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_toRightOf="@+id/profile_details"
+            android:background="@drawable/edittext_background_3"
+            android:gravity="center"
+            android:text="Request Sent"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="178dp"
+            android:visibility="invisible"
+            />
+
+        <TextView
+            android:id="@+id/user_view_profile_undo_request_sent_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Undo"
+            android:textSize="18sp"
+            android:layout_below="@+id/user_view_profile_request_sent_button"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_toRightOf="@+id/profile_details"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp"
+            android:layout_marginStart="70dp"
+            android:visibility="invisible"
+            />
+
+        <LinearLayout
+            android:id="@+id/user_view_profile_accept_or_decline_button_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/profile_details"
+            android:orientation="horizontal"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="178dp"
+            android:visibility="invisible"
+            >
+
+            <Button
+                android:id="@+id/user_view_profile_accept_friend_request_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Accept"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_background_4"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/user_view_profile_decline_friend_request_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Reject"
+                android:textStyle="italic"
+                android:background="@drawable/edittext_background_5"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/user_view_profile_unfriend_button"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_toRightOf="@+id/profile_details"
+            android:background="@drawable/edittext_background_3"
+            android:gravity="center"
+            android:text="Unfriend"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:layout_marginLeft="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="178dp"
+            android:visibility="invisible"
+            />
+
+
+        <TextView
+            android:id="@+id/show_friends_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_view_profile_undo_request_sent_text_view"
+            android:text="Friends"
+            android:textSize="16sp"
+            android:layout_toRightOf="@+id/profile_details"
+            android:layout_toEndOf="@+id/profile_details"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/user_all_friends_count_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_below="@+id/show_friends_text_view"
+            android:layout_marginLeft="17dp"
+            android:layout_marginStart="17dp"
+            android:layout_toRightOf="@+id/profile_details"
+            android:layout_toEndOf="@+id/profile_details"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/darker_gray"
+            />
+
+        <TextView
+            android:id="@+id/user_view_profile_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:text="Het, hi I'm using SoulsSpot"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="30dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="30dp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/user_view_profile_mobile_number"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@android:color/darker_gray"
+            android:text="9488575398"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            tools:ignore="RtlSymmetry"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingBottom="10dp"
+            android:paddingEnd="30dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:id="@+id/action_friends_list_search"
+        android:icon="@drawable/ic_action_action_search"
+        android:orderInCategory="100"
+        android:title="@string/abc_search_hint"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_add_friends"
+        android:icon="@drawable/ic_add_contact"
+        android:title="Add Contact"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        />
+
+
+</menu>

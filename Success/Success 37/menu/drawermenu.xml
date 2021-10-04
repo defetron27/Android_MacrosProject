@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Settings"
+        android:id="@+id/nav_item_settings"
+        android:icon="@drawable/nav_bar_settings_icon"/>
+
+    <item android:title="Friends"
+        android:id="@+id/nav_item_friends"
+        android:icon="@drawable/ic_friends"
+        />
+
+    <item android:title="All Friends"
+        android:id="@+id/nav_item_all_friends"
+        android:icon="@drawable/ic_friends"/>
+</menu>

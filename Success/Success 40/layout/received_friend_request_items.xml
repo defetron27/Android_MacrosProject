@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/received_friend_request_user_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/vadim"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/received_friend_request_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10sp"
+            android:paddingTop="10dp"
+            android:textSize="16sp"
+            android:paddingStart="10sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/request_sent_to_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/received_friend_request_user_name"
+            android:text="Friend Request"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingTop="3dp"
+            android:textSize="13sp"
+            tools:ignore="RtlSymmetry"
+            android:textStyle="italic"
+            />
+
+        <LinearLayout
+            android:id="@+id/request_received_accept_or_reject_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            tools:ignore="RtlSymmetry">
+
+            <Button
+                android:id="@+id/request_received_accept_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Accept"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_background_4"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/request_received_decline_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Reject"
+                android:textStyle="italic"
+                android:background="@drawable/edittext_background_5"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

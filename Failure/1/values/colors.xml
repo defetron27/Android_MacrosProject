@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryLightDefault">#c2c2c2</color>
+    <color name="colorAccentLightDefault">#cc66ff</color>
+
+    <color name="colorPrimaryDarkDefault">#37474F</color>
+    <color name="colorAccentDarkDefault">#2196F3</color>
+
+
+    <color name="tab_indicator_1">#dab3f7</color>
+    <color name="tab_indicator_2">#c277ea</color>
+    <color name="tab_indicator_3">#b24eff</color>
+    <color name="tab_indicator_4">#aa00ff</color>
+    <color name="tab_indicator_5">#4c0363</color>
+</resources>

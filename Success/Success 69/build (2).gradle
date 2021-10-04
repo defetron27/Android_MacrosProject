@@ -1,0 +1,156 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.deffe.macros.grindersouls"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled = true
+
+
+        externalNativeBuild
+                {
+                    cmake
+                            {
+                                cppFlags "-frtti -fexceptions"
+                            }
+                }
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    //Built In Android
+
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.android.support:support-media-compat:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:animated-vector-drawable:27.1.1'
+
+    //Firebase Config Dependencies
+
+    implementation 'com.google.firebase:firebase-auth:15.1.0'
+    implementation 'com.google.firebase:firebase-database:15.0.1'
+    implementation 'com.google.firebase:firebase-storage:15.0.2'
+    implementation 'com.google.firebase:firebase-messaging:15.0.2'
+
+    //Exp-Player
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.7.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.7.1'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.7.1'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.7.1'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.7.1'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.7.1'
+
+    //CircularImageView
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    //Download
+
+    implementation 'com.github.tibolte:elasticdownload:1.0.4'
+
+    //ImageCompressor
+
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //ImageCropper
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6.0'
+
+    //Picasso Libs
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+
+    //Glide
+
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    implementation 'com.github.bumptech.glide:compiler:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    //Circular-Reveal Invite Profile
+
+    implementation 'com.github.ozodrukh:CircularReveal:1.0.5@aar'
+
+    implementation 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+
+    //Spring Indicator
+
+    implementation 'com.github.chenupt.android:springindicator:1.0.2@aar'
+
+    implementation 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
+
+    //Animations
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //CountryCodePicker
+
+    implementation 'com.github.joielechong:countrycodepicker:2.1.5'
+
+    //CountDown Timer
+
+    implementation 'com.github.alexfu:CountDownView:0.1.0'
+
+    //Themes
+
+    implementation('com.github.afollestad.material-dialogs:core:0.8.5.4@aar') {
+        transitive = true
+    }
+    implementation('com.github.afollestad.material-dialogs:commons:0.8.5.4@aar') {
+        transitive = true
+    }
+    implementation('com.github.garretyoder:app-theme-engine:1.5@aar') {
+        transitive = true
+    }
+
+    //ViewPagers
+
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+
+    implementation 'com.android.support:palette-v7:27.1.1'
+
+    //AutoPlay Videos
+
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.12'
+
+}
+apply plugin: 'com.google.gms.google-services'

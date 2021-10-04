@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    tools:ignore="RtlSymmetry"
+    android:paddingRight="20dp"
+    android:paddingEnd="20dp">
+
+
+    <ImageView
+        android:id="@+id/imgSticker"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_sticker"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgText"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_text"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@id/imgSticker"
+        app:layout_constraintEnd_toEndOf="@id/imgPencil"
+        app:layout_constraintEnd_toStartOf="@id/imgPencil"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/imgPencil"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_brush"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@id/btnEraser"
+        app:layout_constraintEnd_toStartOf="@id/btnEraser"
+        android:layout_marginRight="35dp"
+        android:layout_marginEnd="35dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/btnEraser"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_eraser"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@id/imgEmoji"
+        app:layout_constraintEnd_toStartOf="@id/imgEmoji"
+        android:layout_marginRight="30dp"
+        android:layout_marginEnd="30dp"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/imgEmoji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_insert_emoticon"
+        android:contentDescription="@string/todo"
+        android:paddingTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingRight="30dp"
+        android:paddingEnd="30dp"
+        tools:ignore="RtlSymmetry"
+        android:visibility="gone"
+        />
+
+
+</android.support.constraint.ConstraintLayout>

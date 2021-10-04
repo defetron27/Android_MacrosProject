@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:summary="DefaultTransformer"
+        android:key="view_pager_transformation_preference"
+        android:title="Pager Transformation Settings"
+        android:entries="@array/pager_transformer_list"
+        android:entryValues="@array/pager_transformer_list"
+        android:defaultValue="DefaultTransformer"
+        />
+
+</PreferenceScreen>

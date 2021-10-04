@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/view_user_profile_activity"
+    >
+
+    <ImageView
+        android:id="@+id/view_user_profile_image_background"
+        android:layout_width="0dp"
+        android:layout_height="96dp"
+        android:src="@drawable/vadim"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/todo" />
+
+    <LinearLayout
+        android:id="@+id/view_user_profile_image_with_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/view_user_profile_image_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintTop_toBottomOf="@id/view_user_profile_image_background"
+        android:orientation="vertical"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/view_user_profile_image"
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            />
+
+        <TextView
+            android:id="@+id/view_user_profile_name"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginEnd="3dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_user_profile_friends_with_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_user_profile_image_with_name"
+        app:layout_constraintTop_toBottomOf="@id/view_user_profile_image_background"
+        app:layout_constraintHorizontal_bias="0.22"
+        android:layout_marginTop="4dp"
+        >
+
+        <TextView
+            android:id="@+id/view_user_profile_friends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/view_user_profile_friends_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_user_profile_posts_with_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view_user_profile_friends_with_count"
+        app:layout_constraintTop_toBottomOf="@+id/view_user_profile_image_background"
+        android:layout_marginTop="4dp"
+        >
+
+        <TextView
+            android:id="@+id/view_user_profile_posts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Posts"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/view_user_profile_posts_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/friend_request_area"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintTop_toBottomOf="@id/view_user_profile_image_with_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.55"
+        >
+
+        <Button
+            android:id="@+id/view_user_profile_send_friend_request_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background_9"
+            android:text="Send Request"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:id="@+id/view_user_profile_request_send_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/edittext_background_9"
+            android:layout_margin="5dp"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/view_user_profile_request_sent_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Undo"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="#000"
+                android:layout_marginTop="4dp"
+                />
+
+            <TextView
+                android:id="@+id/view_user_profile_request_sent_undo_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Request Sent"
+                android:paddingBottom="7dp"
+                android:layout_marginTop="2dp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/view_user_profile_accept_or_decline_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background_9"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/view_user_profile_accept_friend_request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#000"
+                />
+
+            <Button
+                android:id="@+id/view_user_profile_decline_friend_request_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:text="Decline"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/view_user_profile_unfriend_a_friend_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background_9"
+            android:text="UnFriend"
+            android:layout_margin="5dp"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingRight="20dp"
+            android:paddingEnd="20dp"
+            android:paddingStart="20dp"
+            android:paddingLeft="20dp"
+            android:visibility="gone"
+            />
+
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/view_user_profile_mobile_with_about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/friend_request_area"
+        app:layout_constraintStart_toStartOf="@id/view_user_profile_image_with_name"
+        android:layout_marginTop="6dp"
+        >
+
+        <TextView
+            android:id="@+id/view_user_profile_mobile_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mobile"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/view_user_profile_mobile_number_text_view"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/edittext_background_9"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:paddingStart="20dp"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/view_user_profile_about_with_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/view_user_profile_mobile_with_about"
+        app:layout_constraintStart_toStartOf="@id/view_user_profile_image_with_name"
+        android:layout_marginTop="10dp"
+        >
+
+        <TextView
+            android:id="@+id/view_user_profile_about_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/view_user_profile_about_details_text_view"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background_9"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:paddingLeft="20dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:padding="10dp"
+            android:paddingStart="20dp"
+            android:paddingRight="13dp"
+            android:paddingEnd="13dp"
+            android:layout_marginTop="3dp"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

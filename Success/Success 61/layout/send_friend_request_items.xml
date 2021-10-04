@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/send_friend_request_user_image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/vadim"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/send_friend_request_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@android:color/black"
+            android:paddingLeft="15sp"
+            android:paddingTop="10dp"
+            android:textSize="18sp"
+            android:paddingStart="15sp"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/request_sent_to_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/send_friend_request_user_name"
+            android:text="Request Sent"
+            android:paddingLeft="30dp"
+            android:paddingStart="30dp"
+            android:paddingTop="3dp"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            tools:ignore="RtlSymmetry" />
+
+        <TextView
+            android:id="@+id/send_friend_request_undo_text_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Undo"
+            android:textStyle="italic"
+            android:paddingRight="25dp"
+            android:textSize="18sp"
+            android:textColor="#e42c2c"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingEnd="25dp"
+            tools:ignore="RtlSymmetry" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

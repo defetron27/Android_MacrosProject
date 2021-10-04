@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_incoming_video_profile_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_shape_incoming_message"
+        android:layout_marginLeft="30dp"
+        android:layout_marginStart="30dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/online_received_video_image_view"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/online_received_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="#000"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/online_received_video_play_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_video"
+            android:contentDescription="@string/todo"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_shape_outgoing_message"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_gravity="end"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/online_send_video_image_view"
+                android:layout_width="280dp"
+                android:layout_height="190dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:layout_margin="10dp"
+                />
+
+            <TextView
+                android:id="@+id/online_send_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="25dp"
+                android:layout_marginEnd="25dp"
+                android:textColor="#000"
+                android:layout_marginBottom="4dp"
+                />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/online_send_video_play_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_video"
+            android:contentDescription="@string/todo"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

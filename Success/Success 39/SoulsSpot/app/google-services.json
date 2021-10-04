@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "762219777284",
+    "firebase_url": "https://soulsspot-d5821.firebaseio.com",
+    "project_id": "soulsspot-d5821",
+    "storage_bucket": "soulsspot-d5821.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:762219777284:android:a4a94d546d12ec46",
+        "android_client_info": {
+          "package_name": "com.deffe.macros.soulsspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "762219777284-fjn9u4htmtr55clcfthjslj425s1m7gm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deffe.macros.soulsspot",
+            "certificate_hash": "9ae7c4de55aee9083767a5ce32b6c89e776a5db5"
+          }
+        },
+        {
+          "client_id": "762219777284-me0m54vm0jkjb5hh9u1jjbg7kutqn5et.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDYTnsL1Y2LU2nKuce-N-WuVtzIlC-ag1I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "762219777284-me0m54vm0jkjb5hh9u1jjbg7kutqn5et.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

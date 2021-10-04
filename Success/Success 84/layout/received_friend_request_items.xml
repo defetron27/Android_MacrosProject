@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/received_friend_request_user_image"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="10dp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        >
+
+        <TextView
+            android:id="@+id/received_friend_request_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:paddingLeft="10sp"
+            android:paddingTop="10dp"
+            android:textSize="16sp"
+            android:paddingStart="10sp"
+            android:visibility="gone"
+            android:paddingRight="0dp"
+            android:paddingEnd="0dp"
+            />
+
+        <TextView
+            android:id="@+id/request_sent_to_friend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/received_friend_request_user_name"
+            android:text="Friend Request:"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="3dp"
+            android:textSize="13sp"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/request_sent_to_friend_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request_sent_to_friend"
+            android:paddingLeft="25dp"
+            android:paddingStart="25dp"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:paddingTop="3dp"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:id="@+id/request_received_accept_or_reject_linear_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:paddingTop="10dp"
+            android:paddingRight="5dp"
+            android:paddingEnd="5dp"
+            android:paddingLeft="0dp"
+            android:paddingStart="0dp"
+            android:visibility="gone"
+            >
+
+            <Button
+                android:id="@+id/request_received_accept_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Accept"
+                android:textStyle="italic"
+                android:textSize="16sp"
+                android:background="@drawable/edittext_background_4"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/request_received_decline_button"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:text="Reject"
+                android:textStyle="italic"
+                android:background="@drawable/edittext_background_5"
+                tools:ignore="ButtonStyle"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#151414"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:paddingLeft="10dp"
+    android:paddingStart="10dp"
+    tools:ignore="RtlSymmetry"
+    android:paddingRight="20dp"
+    android:paddingEnd="20dp">
+
+
+    <ImageView
+        android:id="@+id/imgSticker"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_sticker"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgFilter"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_filter"
+        android:contentDescription="@string/todo"
+        app:layout_constraintStart_toEndOf="@id/imgSticker"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="@id/imgPencil"
+        app:layout_constraintEnd_toStartOf="@id/imgPencil"
+        />
+
+    <ImageView
+        android:id="@+id/imgPencil"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_brush"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@id/btnEraser"
+        app:layout_constraintEnd_toStartOf="@id/btnEraser"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/btnEraser"
+        android:layout_width="45dp"
+        android:layout_height="35dp"
+        android:src="@drawable/ic_eraser"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="@id/imgFilterCustom"
+        app:layout_constraintEnd_toStartOf="@id/imgFilterCustom"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:id="@+id/imgFilterCustom"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:src="@drawable/ic_filter_custom"
+        android:contentDescription="@string/todo"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deffe.macros.animations.InviteProfileActivity"
+    android:background="#3d1c4b"
+    >
+
+
+    <RelativeLayout
+        android:id="@+id/user_invite_pic_area"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="75dp">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:background="@android:color/black"
+                android:contentDescription="@string/todo" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/user_invite_pic"
+                android:layout_width="wrap_content"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/register_user" />
+
+            <ImageButton
+                android:id="@+id/add_user_invite_profile_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="120dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic_add_invite_profile_pic" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/user_invite_pic_area"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:mtf_labelColor="#fff"
+                app:mtf_image="@drawable/ic_username"
+                app:mtf_openKeyboardOnFocus="true"
+                android:layout_marginTop="10dp"
+                >
+
+                <EditText
+                    android:id="@+id/user_invite_profile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:minLines="1"
+                    android:maxLength="20"
+                    android:textColorHint="@android:color/black"
+                    />
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <com.github.florent37.materialtextfield.MaterialTextField
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                app:mtf_labelColor="#fff"
+                app:mtf_image="@drawable/ic_status"
+                android:layout_marginTop="10dp"
+                app:mtf_openKeyboardOnFocus="true"
+                >
+
+
+
+                <EditText
+                    android:id="@+id/user_invite_profile_status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Invite Profile Status"
+                    android:textColorHint="@android:color/black"
+                    android:textColor="#000"
+                    android:textSize="15sp"
+                    android:inputType="text"
+                    android:minLines="10"
+                    android:maxLength="500"
+                    />
+
+
+            </com.github.florent37.materialtextfield.MaterialTextField>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hint:This is your Invite Profile Username and Status"
+                android:textStyle="italic"
+                android:textColor="#a1a1a1"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/user_invite_profile_done"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:background="@drawable/edittext_background_2"
+                android:layout_marginTop="20dp"
+                android:textAllCaps="false"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

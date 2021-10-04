@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayDrumPadMusicsActivity"
+    android:orientation="vertical"
+    android:background="#130f0f"
+    android:layout_gravity="center"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sound1"
+                android:background="@drawable/grey_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound1"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp" />
+
+            <TextView
+                android:id="@+id/sound2"
+                android:background="@drawable/grey_button"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound2"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/sound3"
+                android:background="@drawable/grey_button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound3"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+            <TextView
+                android:id="@+id/sound4"
+                android:background="@drawable/grey_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:onClick="playSound4"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sound9"
+            android:background="@drawable/grey_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound9"
+            />
+
+        <TextView
+            android:id="@+id/sound10"
+            android:background="@drawable/grey_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound10"
+            />
+
+        <TextView
+            android:id="@+id/sound11"
+            android:background="@drawable/grey_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound11"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sound12"
+            android:background="@drawable/grey_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound12"
+            />
+
+        <TextView
+            android:id="@+id/sound13"
+            android:background="@drawable/grey_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound13"
+            />
+
+        <TextView
+            android:id="@+id/sound14"
+            android:background="@drawable/grey_button"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="playSound14"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sound5"
+                android:background="@drawable/grey_button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound5"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/sound6"
+                android:background="@drawable/grey_button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound6"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/sound7"
+                android:background="@drawable/grey_button"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound7"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+            <TextView
+                android:id="@+id/sound8"
+                android:background="@drawable/grey_button"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:onClick="playSound8"
+                android:layout_marginRight="5dp"
+                android:layout_marginEnd="5dp"
+                />
+
+    </LinearLayout>
+
+</LinearLayout>

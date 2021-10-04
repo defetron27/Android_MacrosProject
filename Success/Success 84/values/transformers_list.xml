@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="pager_transformer_list">
+
+        <item>DefaultTransformer</item>
+        <item>AccordionTransformer</item>
+        <item>BackgroundToForegroundTransformer</item>
+        <item>CubeInTransformer</item>
+        <item>CubeOutTransformer</item>
+        <item>DepthPageTransformer</item>
+        <item>DrawerTransformer</item>
+        <item>ForegroundToBackgroundTransformer</item>
+        <item>RotateDownTransformer</item>
+        <item>RotateUpTransformer</item>
+        <item>ScaleInOutTransformer</item>
+        <item>StackTransformer</item>
+        <item>TabletTransformer</item>
+        <item>ZoomInTransformer</item>
+        <item>ZoomOutSlideTransformer</item>
+        <item>ZoomOutTransformer</item>
+
+    </string-array>
+</resources>

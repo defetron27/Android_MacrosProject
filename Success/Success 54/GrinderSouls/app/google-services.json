@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "93876604418",
+    "firebase_url": "https://grindersouls.firebaseio.com",
+    "project_id": "grindersouls",
+    "storage_bucket": "grindersouls.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93876604418:android:f2f129ddad4ae2cd",
+        "android_client_info": {
+          "package_name": "com.deffe.macros.grindersouls"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93876604418-1oesp95aaquug0sg6pn96vaaoni4usa6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.deffe.macros.grindersouls",
+            "certificate_hash": "9ae7c4de55aee9083767a5ce32b6c89e776a5db5"
+          }
+        },
+        {
+          "client_id": "93876604418-oa8h0uh6c04qlul146o4qu768tg68c6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAxoPMKPOuj3TdIW4k9-hPZEqT882WIR3M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93876604418-oa8h0uh6c04qlul146o4qu768tg68c6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

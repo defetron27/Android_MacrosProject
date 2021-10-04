@@ -1,0 +1,8 @@
+url:http://djustice-android.tumblr.com
+name:MacroBot
+email:defetron27@gmail.com
+gender:male
+botmaster:Deffe
+organization:Macros
+version:0.0.1
+

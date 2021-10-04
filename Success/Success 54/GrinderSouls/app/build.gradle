@@ -1,0 +1,128 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.deffe.macros.grindersouls"
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-frtti -fexceptions"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+
+    //Built In Android
+
+    implementation 'com.android.support:support-media-compat:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:design:27.1.1'
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.android.support:cardview-v7:27.1.1'
+    implementation 'com.android.support:animated-vector-drawable:27.1.1'
+
+    //Firebase Config Dependencies
+
+    implementation 'com.google.firebase:firebase-auth:15.0.0'
+    implementation 'com.google.firebase:firebase-database:15.0.0'
+    implementation 'com.google.firebase:firebase-storage:15.0.0'
+    implementation 'com.google.firebase:firebase-messaging:15.0.0'
+
+    //CircularImageView
+
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+
+    //ImageCompressor
+
+    implementation 'id.zelory:compressor:2.1.0'
+
+    //ImageCropper
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.6+'
+
+    //Picasso Libs
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.squareup.okhttp:okhttp:2.5.0'
+
+    //Circular-Reveal Invite Profile
+
+    implementation 'com.github.ozodrukh:CircularReveal:1.0.5@aar'
+
+    implementation 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+
+    implementation 'com.nineoldandroids:library:2.4.0'
+
+    //Spring Indicator
+
+    implementation 'com.github.chenupt.android:springindicator:1.0.2@aar'
+
+    implementation 'com.github.chenupt.android:multiplemodel:1.1.0@aar'
+
+    //Animations
+
+    implementation 'com.daimajia.easing:library:2.0@aar'
+    implementation 'com.daimajia.androidanimations:library:2.3@aar'
+
+    //CountryCodePicker
+
+    implementation 'com.github.joielechong:countrycodepicker:2.1.5'
+
+    //CountDown Timer
+
+    implementation 'com.github.alexfu:CountDownView:0.1.0'
+
+    //SearchView
+
+    implementation 'com.miguelcatalan:materialsearchview:1.3.0'
+
+    //Themes
+
+    implementation('com.github.afollestad.material-dialogs:core:0.8.5.4@aar') {
+        transitive = true
+    }
+    implementation('com.github.afollestad.material-dialogs:commons:0.8.5.4@aar') {
+        transitive = true
+    }
+    implementation('com.github.garretyoder:app-theme-engine:1.5@aar') {
+        transitive = true
+    }
+
+    //ViewPagers
+
+    implementation 'com.ToxicBakery.viewpager.transforms:view-pager-transforms:1.2.32@aar'
+
+    implementation 'com.github.chrisbanes:PhotoView:2.1.3'
+
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+
+    implementation 'com.android.support:palette-v7:27.1.1'
+
+}
+apply plugin: 'com.google.gms.google-services'

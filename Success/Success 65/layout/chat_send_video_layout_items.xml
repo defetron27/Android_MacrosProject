@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/message_incoming_video_profile_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="4dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#000"
+            android:visibility="gone"
+            />
+
+        <RelativeLayout
+            android:id="@+id/online_received_video_message_relative_layout"
+            android:layout_width="280dp"
+            android:layout_height="190dp"
+            android:background="@drawable/incoming"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingLeft="17dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="6dp"
+            android:paddingRight="6dp"
+            android:paddingBottom="7dp"
+            android:visibility="gone"
+            >
+
+            <ImageView
+                android:id="@+id/online_received_video_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/online_received_video_play_button"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:src="@drawable/play_video"
+                android:contentDescription="@string/todo"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/online_received_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:textColor="#fff"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/online_send_video_message_relative_layout"
+        android:layout_width="280dp"
+        android:layout_height="190dp"
+        android:background="@drawable/input"
+        android:paddingLeft="5dp"
+        android:paddingStart="5dp"
+        android:paddingRight="17dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"
+        >
+
+        <ImageView
+            android:id="@+id/online_send_video_image_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            />
+
+        <ImageView
+            android:id="@+id/online_send_video_play_button"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:src="@drawable/play_video"
+            android:contentDescription="@string/todo"
+            android:layout_centerInParent="true"
+            android:visibility="gone"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/video_stored"
+                android:layout_width="13dp"
+                android:layout_height="14dp"
+                android:src="@drawable/yellow_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/video_received"
+                android:layout_width="13dp"
+                android:layout_height="14dp"
+                android:src="@drawable/green_circle"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#fff"
+                android:layout_marginRight="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/online_send_video_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_marginBottom="4dp"
+                android:layout_marginRight="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginTop="2dp"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

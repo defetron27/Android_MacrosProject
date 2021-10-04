@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.deffe.macros.macrogrids.UserInviteProfileActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_alignBottom="@+id/circleImageView2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/background_grids" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Invite Profile Settings"
+        android:textColor="#686666"
+        android:textSize="25dp"
+        android:textStyle="italic"
+        android:id="@+id/textView" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/register_user" />
+
+    <ImageView
+        android:id="@+id/user_invite_profile_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/circleImageView2"
+        android:layout_alignEnd="@+id/circleImageView2"
+        android:layout_marginEnd="12dp"
+        android:src="@drawable/ic_add_user_img" />
+
+    <TextView
+        android:id="@+id/user_invite_username_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_invite_profile_background"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Username"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/user_invite_profile_name"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/user_invite_username_textview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Type Invite Profile Name.."
+        android:paddingLeft="20dp"
+        android:textColorHint="#4e4c4c"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/user_invite_status_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/user_invite_username_textview"
+        android:layout_below="@+id/user_invite_profile_name"
+        android:layout_marginTop="5dp"
+        android:text="Invite Status"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/user_invite_profile_status"
+        android:layout_width="330dp"
+        android:layout_height="60dp"
+        android:layout_alignStart="@+id/user_invite_profile_name"
+        android:layout_below="@+id/user_invite_status_textview"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Hey there, I'm using Macro-s"
+        android:paddingLeft="20dp"
+        android:textColorHint="#4e4c4c"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/user_invite_profile_hint"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/user_invite_profile_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Hint: This is Your Friend Request Invite Profile Status, So Decorate more and more"
+        android:textColor="#4e4c4c"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/user_save_invite_profile_settings_buttton"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/user_invite_profile_status"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/button_background"
+        android:drawableRight="@drawable/ic_save"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="#FF009DFF"
+        android:textSize="18dp"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/user_after_save_invite_profile_settings_next_button"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/user_save_invite_profile_settings_buttton"
+        android:layout_alignBottom="@+id/user_save_invite_profile_settings_buttton"
+        android:layout_alignEnd="@+id/user_invite_profile_status"
+        android:background="@drawable/button_background"
+        android:drawableRight="@drawable/ic_send_code"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FF009DFF"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

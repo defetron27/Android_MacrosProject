@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="@dimen/button_message_width"
+    android:layout_height="@dimen/button_message_hieght"
+    android:background="@drawable/edittext_background_2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Send Request"
+        android:textColor="#000"
+        android:textStyle="italic"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:paddingTop="15dp"
+        />
+
+</FrameLayout>
+
+

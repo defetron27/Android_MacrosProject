@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    android:orientation="horizontal"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/popup_user_image"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/vadim"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/popup_edit_text"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_gravity="center"
+        android:hint="Add a comment"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/chat_send"
+        android:contentDescription="@string/todo"
+        android:background="#00000000"
+        />
+
+</LinearLayout>

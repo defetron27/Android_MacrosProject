@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.deffe.macros.grindersouls.ZoomableImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/post_image_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:contentDescription="@string/todo"
+    android:background="@android:color/black"
+    />

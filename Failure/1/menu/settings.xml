@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/save_theme_and_apply"
+        android:title="Create and Apply"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/create_theme_only"
+        android:title="Create Only"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/save_theme_cancel"
+        android:title="Cancel"
+        />
+
+</menu>

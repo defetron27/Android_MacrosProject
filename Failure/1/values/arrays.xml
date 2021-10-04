@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="indicator_colors">
+        <item>@color/tab_indicator_1</item>
+        <item>@color/tab_indicator_2</item>
+        <item>@color/tab_indicator_3</item>
+        <item>@color/tab_indicator_4</item>
+        <item>@color/tab_indicator_5</item>
+    </array>
+</resources>

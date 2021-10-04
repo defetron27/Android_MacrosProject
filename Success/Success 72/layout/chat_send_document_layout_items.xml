@@ -1,0 +1,849 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/message_incoming_document_profile_img"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="4dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000"
+                android:visibility="gone"
+                android:layout_marginLeft="5dp" />
+
+            <LinearLayout
+                android:id="@+id/online_received_document_pdf_message_linear_layout"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/incoming"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="30dp"
+                android:paddingTop="5dp"
+                android:paddingStart="17dp"
+                android:paddingEnd="6dp"
+                android:paddingBottom="7dp"
+                android:layout_marginLeft="30dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="6dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp">
+
+                    <ImageView
+                        android:id="@+id/online_received_document_pdf_image_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="centerCrop"
+                        android:visibility="gone"
+                        />
+
+                    <ImageView
+                        android:id="@+id/online_received_document_pdf_icon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/pdf"
+                        android:contentDescription="@string/todo"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="3dp"
+                        android:visibility="gone"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/document_pdf_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentBottom="true"
+                        android:orientation="horizontal"
+                        android:layout_alignParentRight="true">
+
+                        <TextView
+                            android:id="@+id/online_received_document_pdf_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:textColor="#fff"
+                            android:visibility="gone"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/online_received_document_pdf_sharing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_sharing"
+                            android:background="#00000000"
+                            android:layout_marginEnd="3dp"
+                            android:contentDescription="@string/todo"
+                            android:layout_marginRight="3dp"
+                            android:visibility="gone"
+                            />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/online_received_document_pdf_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:textColor="#000"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_received_document_zip_message_linear_layout"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incoming"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="7dp"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+
+                <ImageView
+                    android:id="@+id/online_received_document_zip_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/zip"
+                    android:padding="30dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/document_zip_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/online_received_document_zip_image_view">
+
+                    <TextView
+                        android:id="@+id/online_received_document_zip_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#000"
+                        android:visibility="gone"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/online_received_document_zip_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sharing_black"
+                        android:background="#00000000"
+                        android:layout_marginEnd="3dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginRight="3dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/online_received_document_zip_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="#000"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_received_document_txt_message_linear_layout"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incoming"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="7dp"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+
+                <ImageView
+                    android:id="@+id/online_received_document_txt_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/txt"
+                    android:padding="30dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/document_txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/online_received_document_txt_image_view">
+
+                    <TextView
+                        android:id="@+id/online_received_document_txt_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#000"
+                        android:visibility="gone"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/online_received_document_txt_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sharing_black"
+                        android:background="#00000000"
+                        android:layout_marginEnd="3dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginRight="3dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/online_received_document_txt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="#000"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/online_received_document_apk_message_linear_layout"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/incoming"
+            android:layout_marginTop="40dp"
+            android:layout_marginStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingStart="17dp"
+            android:paddingEnd="6dp"
+            android:paddingBottom="7dp"
+            android:layout_marginLeft="30dp"
+            android:paddingLeft="17dp"
+            android:paddingRight="6dp"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="155dp">
+
+                <ImageView
+                    android:id="@+id/online_received_document_apk_image_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="135dp"
+                    android:contentDescription="@string/todo"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/apk"
+                    android:padding="30dp"
+                    android:visibility="gone"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/document_apk_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/online_received_document_apk_image_view">
+
+                    <TextView
+                        android:id="@+id/online_received_document_apk_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:textColor="#000"
+                        android:visibility="gone"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/online_received_document_apk_sharing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_sharing_black"
+                        android:background="#00000000"
+                        android:layout_marginEnd="3dp"
+                        android:contentDescription="@string/todo"
+                        android:layout_marginRight="3dp"
+                        android:visibility="gone"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/online_received_document_apk_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="3dp"
+                android:textColor="#000"
+                android:visibility="gone"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/online_send_document_pdf_message_linear_layout"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:paddingStart="5dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"
+        android:paddingRight="17dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp">
+
+            <ImageView
+                android:id="@+id/online_send_document_pdf_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:visibility="gone"
+                />
+
+            <ImageView
+                android:id="@+id/online_send_document_pdf_icon"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/pdf"
+                android:contentDescription="@string/todo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginBottom="3dp"
+                android:layout_alignParentBottom="true"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_pdf_stored"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/yellow_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#fff"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_pdf_received"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/green_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#fff"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/online_send_document_pdf_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/online_send_document_pdf_sharing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sharing_black"
+                    android:background="#00000000"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_marginRight="4dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/online_send_document_pdf_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/online_send_document_zip_message_linear_layout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:paddingStart="5dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"
+        android:paddingRight="17dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp">
+
+            <ImageView
+                android:id="@+id/online_send_document_zip_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/zip"
+                android:padding="30dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/online_send_document_zip_image_view"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_zip_stored"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/yellow_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_zip_received"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/green_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/online_send_document_zip_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/online_send_document_zip_sharing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sharing_black"
+                    android:background="#00000000"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_marginRight="4dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/online_send_document_zip_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/online_send_document_txt_message_linear_layout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:paddingStart="5dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"
+        android:paddingRight="17dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp">
+
+            <ImageView
+                android:id="@+id/online_send_document_txt_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/txt"
+                android:padding="30dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/online_send_document_txt_image_view"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_txt_stored"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/yellow_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_txt_received"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/green_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/online_send_document_txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/online_send_document_txt_sharing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sharing_black"
+                    android:background="#00000000"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_marginRight="4dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/online_send_document_txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/online_send_document_apk_message_linear_layout"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/input"
+        android:paddingStart="5dp"
+        android:paddingEnd="17dp"
+        android:paddingBottom="7dp"
+        android:paddingTop="5dp"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="end"
+        android:paddingRight="17dp"
+        android:paddingLeft="5dp"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="155dp">
+
+            <ImageView
+                android:id="@+id/online_send_document_apk_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="130dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerCrop"
+                android:src="@drawable/apk"
+                android:padding="30dp"
+                android:visibility="gone"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/online_send_document_apk_image_view"
+                >
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_apk_stored"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/yellow_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/document_apk_received"
+                    android:layout_width="13dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/green_circle"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#000"
+                    android:layout_marginEnd="8dp"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="8dp"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/online_send_document_apk_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:layout_marginBottom="4dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+
+                <ImageButton
+                    android:id="@+id/online_send_document_apk_sharing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_sharing_black"
+                    android:background="#00000000"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="@string/todo"
+                    android:layout_marginRight="4dp"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/online_send_document_apk_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
